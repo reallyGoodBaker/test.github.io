@@ -5,7 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/79316659?s=60&amp;v=4">
     <title>Blog?</title>
+    <style>
+        * {
+            font-family: Roboto;
+        }
+        footer {
+            height: 120px;
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            align-items: center;
+        }
+        header{
+            height: 100vh;
+        }
+        .bg{
+            z-index: -1;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100px;
+        }
+        article{
+            transform: translateY(-60px);
+        }
+    </style>
 </head>
-<body style="margin: 0px;overflow: hidden;">
+<body style="margin: 0px;overflow-x: hidden;background-color: #eee;">
+    <header></header>
+    <script src="./components/card.js"></script>
+    <article style="display: flex;justify-content: center;flex-wrap: wrap;">
+        <my-card
+            img="./assets/shinobu.jpeg"
+            title="第一篇文章"
+            sub-title="我也不知道里面写了什么"
+        ></my-card>
+        <my-card
+            img="./assets/shinobu.jpeg"
+            title="第二篇文章"
+            sub-title="我也不知道里面写了什么"
+        ></my-card>
+        <my-card
+        img="./assets/shinobu.jpeg"
+        title="第三篇文章"
+        sub-title="我也不知道里面写了什么"
+    ></my-card>
+    </article>
+    <footer>written by @RGB</footer>
 </body>
 </html>
