@@ -4,53 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/79316659?s=60&amp;v=4">
+    <link rel="stylesheet" href="./main.css">
     <title>Blog?</title>
-    <style>
-        * {
-            font-family: Roboto;
-        }
-        footer {
-            height: 120px;
-            background-color: #222;
-            display: flex;
-            justify-content: center;
-            color: #fff;
-            align-items: center;
-        }
-        header{
-            height: 100vh;
-        }
-        .bg{
-            z-index: -1;
-            position: fixed;
-            left: 0px;
-            top: 0px;
-            width: 100px;
-        }
-        article{
-            transform: translateY(-60px);
-        }
-    </style>
+    <script src="./components/card.js"></script>
 </head>
 <body style="margin: 0px;overflow-x: hidden;background-color: #eee;">
-    <header></header>
-    <script src="./components/card.js"></script>
-    <article style="display: flex;justify-content: center;flex-wrap: wrap;">
-        <my-card
-            img="./assets/shinobu.jpeg"
-            title="第一篇文章"
-            sub-title="我也不知道里面写了什么"
-        ></my-card>
-        <my-card
-            img="./assets/shinobu.jpeg"
-            title="第二篇文章"
-            sub-title="我也不知道里面写了什么"
-        ></my-card>
-        <my-card
-        img="./assets/shinobu.jpeg"
-        title="第三篇文章"
-        sub-title="我也不知道里面写了什么"
-    ></my-card>
+    <header>
+        <img src="./assets/header_img.jpg" alt="header" class="bg">
+    </header>
+    <article>
+        <div class="article">
+            <div class="main-info">
+                <div class="header-txt">
+                    <h1>RGB的博客</h1>
+                    <p>分享一些貌似没什么用，实际上确实没什么用的东西。</p>
+                </div>
+                <div class="btns">
+                    <button onclick="window.open('tencent://Message/?uin=2433479855')">聊一聊</button>
+                </div>
+            </div>
+            <h2>我的文章</h2>
+            <div class="articles">
+                <my-card
+                    img="./assets/shinobu.jpeg"
+                    title="第一篇文章"
+                    sub-title="我也不知道里面写了什么"
+                ></my-card>
+                <my-card
+                    img="./assets/shinobu.jpeg"
+                    title="第二篇文章"
+                    sub-title="我也不知道里面写了什么"
+                ></my-card>
+                <my-card
+                    img="./assets/shinobu.jpeg"
+                    title="第三篇文章"
+                    sub-title="我也不知道里面写了什么"
+                ></my-card>
+            </div>
+    </div>
     </article>
     <footer>written by @RGB</footer>
 </body>
